@@ -1,6 +1,7 @@
 const btn = document.querySelector('.btn');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
+const select = document.querySelector('#option');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -17,5 +18,12 @@ btn.addEventListener('click', (e) => {
        emailInput.value = '';
        emailInput.setAttribute('placeholder', `You have entered an invalid email address!`);
     }  
+
+    
 })
 
+    
+
+
+        
+    
