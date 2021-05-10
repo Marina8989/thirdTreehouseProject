@@ -100,8 +100,16 @@ select option {
 #design{
     width: 110px;
     outline: none; 
+    margin-right: 2rem;
 }
 .size{
-    margin-right: 1.7rem;
-    
+    margin-right: 1.7rem; 
+}
+.colorOneDiv{
+    width: 24rem;
+    display: none;
+}
+.colorTwoDiv{
+    width: 24rem;
+    display: none;
 }

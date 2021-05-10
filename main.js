@@ -10,6 +10,9 @@ btn.addEventListener('click', (e) => {
     if(nameInput.value == "") {
      nameInput.classList.add('redInput');
      nameInput.setAttribute('placeholder',`Oops, this field is still empty`);
+  }else{
+      nameInput.classList.remove('redInput');
+      nameInput.setAttribute('placeholder',``);
   }
 
     // Email input validation 
@@ -19,9 +22,15 @@ btn.addEventListener('click', (e) => {
        emailInput.setAttribute('placeholder', `You have entered an invalid email address!`);
     }  
 
+
+
+
+    // empty input after submit
+     nameInput.value = '';
+     emailInput.value = '';
 })
 
-
+// title input
 const optionTitle = document.getElementById('option');
 const optionInput = document.querySelector('.optionInput');
 console.log(optionTitle);
@@ -30,6 +39,21 @@ optionTitle.addEventListener('change', () => {
         optionInput.style.display = 'block';
     }else{
         optionInput.style.display = 'none';
+    }
+})
+
+// colorOne, colorTwo option
+const colorOne = document.querySelector('.colorOneDiv');
+const colorTwo = document.querySelector('.colorTwoDiv');
+const design = document.getElementById('design');
+
+design.addEventListener('change', () => {
+    if(design.value == 'jsPuns'){
+      colorOne.style.display = 'block';
+      colorTwo.style.display = 'none';
+    }else if(design.value == 'IJS'){
+         colorTwo.style.display = 'block';
+         colorOne.style.display = 'none';
     }
 })
 
