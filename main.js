@@ -19,9 +19,25 @@ btn.addEventListener('click', (e) => {
        emailInput.setAttribute('placeholder', `You have entered an invalid email address!`);
     }  
 
-    
 })
 
+
+const optionTitle = document.getElementById('option');
+const optionInput = document.querySelector('.optionInput');
+console.log(optionTitle);
+optionTitle.addEventListener('change', () => {
+    if(optionTitle.value == 'other'){
+        optionInput.style.display = 'block';
+    }else{
+        optionInput.style.display = 'none';
+    }
+})
+
+
+
+
+
+ 
     
 
 
