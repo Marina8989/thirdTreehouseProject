@@ -16,14 +16,15 @@
         <div class="innerContainer">
             <h3>Basic Info</h3>
             <form id="form">
+                <!-- Name input -->
                 <label for="name" class="nameInput labelText">Name:</label><br />
                 <input type="text" id="name" class="inputText">
                 <br />
-
+                <!-- Email input -->
                 <label for="email" class="emailInput labelText">Email:</label><br />
                 <input type="email" id="email" class="inputText">
                 <br />
-
+                <!-- Select input -->
                 <label for="option" class="selectOption">Job Role</label><br />
                 <select name="option" id="option">
                     <option value="title">Your Title</option>
@@ -34,6 +35,35 @@
                     <option value="student">Student</option>
                     <option value="other" class="other">Other</option>
                 </select>
+                <br />
+
+                <!-- T-shirt Info -->
+                <h3 class="tshirt">T-Shirt Info</h3>
+
+                <div class="tshirtSection">
+                  <!-- size -->
+                  <div class="size">
+                    <label for="size" class="sizeLabel">Size:</label><br />
+                    <select name="size" id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+
+                  <!-- design -->
+                <div class="design">
+                    <label for="design" class="designLabel">Design:</label><br />
+                    <select name="design" id="design">
+                       <option value="selsect-theme">Select Theme</option>
+                       <option value="jsPuns">Theme - JS Puns</option>
+                       <option value="IJS">I ♥︎ JS</option>
+                    </select>
+                </div>
+
+                </div>
                 <br />
 
                 <button class="btn">Register</button>

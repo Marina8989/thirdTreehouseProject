@@ -78,3 +78,22 @@ select option {
 
     background: rgba(209, 231, 241, .7);
 }
+.tshirtSection{
+    display: flex;
+}
+.tshirt{
+    margin-bottom: 1rem;
+}
+
+#size{
+    width: 50px;
+    outline: none; 
+}
+#design{
+    width: 110px;
+    outline: none; 
+}
+.size{
+    margin-right: 1.7rem;
+    
+}
