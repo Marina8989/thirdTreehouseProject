@@ -52,6 +52,7 @@ form{
      border-radius: 5px;
      background:rgba(209, 231, 241, .7);
      transition: background .8s ease;
+     margin-bottom: 2rem;
 }
 .inputText:hover{
     background: white;
@@ -59,5 +60,5 @@ form{
 }
 .redInput{
     border: 2px solid red;
-    box-shadow: 5px 5px 5px rgba(107, 4, 21, 0.274);
+    box-shadow: 5px 5px 5px rgba(148, 5, 5, 0.274);
 }
