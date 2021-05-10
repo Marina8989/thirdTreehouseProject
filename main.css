@@ -9,7 +9,7 @@ body{
 .header{
     text-align: center;
     margin-top: 4rem;
-    color:rgb(25, 56, 66);
+    color:rgb(27, 55, 73);
 }
 .header h1{
     font-size: 2.5rem;
@@ -22,4 +22,17 @@ body{
     margin: 2.2em auto;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+}
+.innerContainer{
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.innerContainer h3{
+    text-align: left;
+    color:rgb(27, 55, 73);
+    font-size: 22px;
+    border-top: 2px solid rgb(75, 113, 134);
+    margin-top: 3rem;
+    padding-top: 1rem;
 }
