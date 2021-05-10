@@ -33,7 +33,7 @@ body{
     color:rgb(27, 55, 73);
     font-size: 22px;
     border-top: 2px solid rgb(75, 113, 134);
-    margin-top: 3rem;
+    margin-top: 1.6rem;
     padding-top: 1rem;
 }
 form{
@@ -112,4 +112,23 @@ select option {
 .colorTwoDiv{
     width: 24rem;
     display: none;
+}
+.btn{
+    margin: 4rem 0;
+    padding: 10px 19px;
+    font-size: 1.2rem;
+    background:rgb(30, 61, 80);
+    color: white;
+    border: none;
+    outline: none;
+}
+.checkboxes {
+    margin-top: 1.3rem;
+}
+.checkboxes input{
+    margin-top: 1.6rem;
+}
+.checkboxes label{
+    font-size: 1.2rem;
+    padding-left: 5px;
 }
