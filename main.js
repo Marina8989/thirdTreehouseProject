@@ -63,20 +63,44 @@ const checkboxLabel = document.querySelectorAll('label');
 const checkBox = document.querySelector('.checkboxes');
 const spanText = document.querySelector('.totalAmount');
 const totalText = document.querySelector('.total');
+let total = 0;
 
 
 checkboxInput.forEach(item => {
-    item.addEventListener('change', (e) => {
-        if(e.target.id == 'main'){
-           console.log(e.target)
-           spanText.innerText = '$'+ Number(200);
+    item.addEventListener('click', (e) => {
+        if(e.target.id == 'main' && e.target.value == 'on'){
+           console.log(e.target.value)
+           console.log(e.target);
+           total = total + 200;
+           spanText.innerText = '$'+ total;
            totalText.append(spanText);
            totalText.style.display = 'block';
+        }else{
+           console.log(e.target.value);
         }
     })
 })
 
 
+
+// payment option
+
+
+//paypal option
+const payment = document.getElementById('payment');
+const paypal = document.querySelector('.paypal');
+const bitcoin = document.querySelector('.bitcoin');
+
+payment.addEventListener('change', () => {
+    if(payment.value == 'payPal') {
+       paypal.style.display = 'block';
+       bitcoin.style.display = 'none';
+    }
+    if(payment.value == 'bitcoin') {
+       bitcoin.style.display = 'block';
+       paypal.style.display = 'none';
+    }
+})
 
 
 

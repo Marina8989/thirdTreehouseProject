@@ -108,6 +108,23 @@
                     <p class="total">Total: <span class="totalAmount"></span></p>
                 </div>
 
+                <h3 class="paymentInfo">Payment Info</h3>
+
+                <div class="selectPayment">
+                    <label for="payment" class="payment">I'm going to pay with:</label><br />
+                        <select name="payment" id="payment">
+                            <option value="selectMethod">Select Payment Method</option>
+                            <option value="creditCard">Credit Card</option>
+                            <option value="payPal">PayPal</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+
+                        <div class="paypal">
+                            <p class="paypalText">If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click "Register" below.</p>
+                        </div>
+                    
+                </div>
+
                 <button class="btn">Register</button>
             </form>
         </div>
