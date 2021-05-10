@@ -90,18 +90,30 @@ checkboxInput.forEach(item => {
 const payment = document.getElementById('payment');
 const paypal = document.querySelector('.paypal');
 const bitcoin = document.querySelector('.bitcoin');
+const creditCard = document.querySelector('.creditCard');
+const date = document.querySelector('.date');
 
 payment.addEventListener('change', () => {
     if(payment.value == 'payPal') {
        paypal.style.display = 'block';
        bitcoin.style.display = 'none';
-    }
-    if(payment.value == 'bitcoin') {
+       creditCard.style.display = 'none';
+       date.style.dysplay = 'none';
+    }else if(payment.value == 'bitcoin') {
        bitcoin.style.display = 'block';
        paypal.style.display = 'none';
+       creditCard.style.display = 'none';
+       date.style.dysplay = 'none';
+    }else if(payment.value == 'creditCard'){
+       bitcoin.style.display = 'none';
+       paypal.style.display = 'none';
+       creditCard.style.display = 'flex';
+       date.style.dysplay = 'flex';
     }
 })
 
+
+//credit card
 
 
  
